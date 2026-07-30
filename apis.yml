@@ -1,8 +1,27 @@
 aid: metaphor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/metaphor.png
 name: Metaphor
-description: 'Metaphor is a company surfaced as a portfolio company of amplify-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: data-analytics. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Metaphor was an active-metadata / data-catalog platform (metaphor.io) that combined a
+  social, agent-assisted data governance experience with a large library of open-source
+  Python "connectors" that extracted metadata (schemas, lineage, usage, ownership,
+  documentation, data quality) from warehouses, BI tools, and data pipelines to populate
+  the Metaphor app. Founded by ex-LinkedIn DataHub engineers and backed by Amplify Partners,
+  Metaphor's technology platform was acquired by KPMG; the metaphor.io site now redirects to
+  the KPMG acquisition announcement and the standalone developer surface (docs.metaphor.io,
+  api.metaphor.io, the MetaphorData GitHub org) has been decommissioned. The first-party
+  open-source metadata packages (metaphor-connectors, metaphor-models) still resolve on PyPI.
 url: https://raw.githubusercontent.com/api-evangelist/metaphor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +29,19 @@ x-backed-by:
 - amplify-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: KPMG
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Data Analytics
+- Metadata
+- Data Catalog
+- Data Governance
+- Data Lineage
+- Active Metadata
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/metaphor-domain-security.yml
 - type: Website
   url: https://metaphor.io
+- type: Packages
+  url: packages/metaphor-packages.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
