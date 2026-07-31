@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/project/metaphor-connectors/
+notes: >-
+  Metaphor (metaphor.io) was acquired by KPMG; the metaphor.io site now 301-redirects
+  to the KPMG acquisition announcement and the MetaphorData GitHub org (github.com/MetaphorData)
+  returns 404. The first-party open-source Python packages below still resolve on PyPI
+  and were the provider's public developer surface. The source repository URLs recorded in
+  the PyPI metadata (github.com/MetaphorData/connectors) no longer resolve.
+packages:
+  - language: python
+    registry: pypi
+    name: metaphor-connectors
+    url: https://pypi.org/project/metaphor-connectors/
+    version: 0.14.185
+    install: pip install metaphor-connectors
+    license: Apache-2.0
+    official: true
+    summary: >-
+      A collection of Python-based 'connectors' that extract metadata from various
+      sources to ingest into the Metaphor app.
+    repository: https://github.com/MetaphorData/connectors
+    repository_status: 404
+  - language: python
+    registry: pypi
+    name: metaphor-models
+    url: https://pypi.org/project/metaphor-models/
+    version: 0.41.3
+    install: pip install metaphor-models
+    official: true
+    summary: Metadata models used by the Metaphor connectors and platform.
