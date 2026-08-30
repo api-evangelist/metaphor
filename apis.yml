@@ -60,6 +60,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/kpmg/
+  name: KPMG
+  x-relationship: acquired
+  x-evidence: "Founded by ex-LinkedIn DataHub engineers and backed by Amplify Partners, Metaphor's technology platform was acquired by KPMG; the metaphor."
 - type: DomainSecurity
   url: security/metaphor-domain-security.yml
 - type: Website
